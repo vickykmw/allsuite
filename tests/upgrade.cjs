@@ -26,7 +26,15 @@ const assert = require('node:assert/strict');
     await page.waitForFunction(()=>navigator.serviceWorker.controller);
     await page.evaluate(async()=>{localStorage.setItem('allsuite-v3-1-1','Skip');await caches.open('another-app');});
     legacy=false;
-    await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});
+    await page.evaluate(async()=>{
+      const controlled = new Promise((resolve, reject)=>{
+        const timer=setTimeout(()=>reject(new Error('Worker did not take control')),15000);
+        navigator.serviceWorker.addEventListener('controllerchange',()=>{clearTimeout(timer);resolve();},{once:true});
+      });
+      const r=await navigator.serviceWorker.getRegistration();
+      await r.update();
+      await controlled;
+    });
     await page.waitForFunction(async()=> (await navigator.serviceWorker.getRegistration()).active?.state === 'activated' && (await caches.keys()).includes('allsuite-v5') && !(await caches.keys()).includes('allsuite-v3'));
     await page.reload();
     await page.waitForFunction(()=>document.querySelector('#ready').textContent.startsWith('Ready offline'));
