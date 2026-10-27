@@ -1,6 +1,6 @@
 'use strict';
 // Bump VERSION whenever a core file changes. Keep each release atomic.
-const VERSION = 'allsuite-v4';
+const VERSION = 'allsuite-v5';
 const ASSETS = ['./','./index.html','./app.js','./styles.css','./itinerary.json','./foods.json','./all-suite-logo.jpg','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 const assetURLs = ASSETS.map(path => new URL(path, self.registration.scope).href);
 self.addEventListener('install', event => event.waitUntil((async () => {
