@@ -1,32 +1,8 @@
 [
-  [
-    "北菓楼 Kitakaro",
-    "Cream puffs · custard and cream",
-    "Dessert"
-  ],
-  [
-    "café & bar 日晴堂",
-    "Caramel pudding and French crêpes",
-    "Café"
-  ],
-  [
-    "どんぐり 大通店 · Donguri Odori",
-    "Hokkaido bakery · savory breads",
-    "Bakery"
-  ],
-  [
-    "Sandria",
-    "Sandwich shop · egg and fruit sandwiches",
-    "Sandwiches"
-  ],
-  [
-    "あべ養鶏場 えっぐぷりん",
-    "Rich egg pudding in jars",
-    "Dessert"
-  ],
-  [
-    "HOKUDAI MARCHE Café & Labo",
-    "Hokkaido University dairy café",
-    "Café"
-  ]
+  {"id":"kitakaro","name":"Kitakaro (北菓楼) · Sapporo Honkan","description":"Cream puffs and Hokkaido sweets in a historic building.","address":"札幌市中央区北1条西5丁目1-2","day":4,"suggestion":"2 Nov: optional central Sapporo stop after the kimono appointment, if comfortable walking.","alternative":"Donguri Odori · savory bakery snack at Le Trois 1F","source":"https://www.kitakaro.com/ext/tenpo/sapporohonkan.html","note":"Café has a Tuesday closure rule with holiday exceptions; check current notices."},
+  {"id":"hibarido","name":"Café & Bar 日晴堂","description":"Pudding and a café break. French toast is on your wish list; confirm availability on the current menu.","address":"札幌市中央区南4条西1丁目13-2 No.5ミカエルビル1F","day":4,"suggestion":"2 Nov: optional café break near Tanukikoji after the kimono appointment.","alternative":"Kitakaro Sapporo Honkan · takeaway cream puff","source":"https://www.hibarido.jp/","note":"The existing guide listed French crêpes; French toast is not verified."},
+  {"id":"donguri","name":"Donguri Odori (どんぐり 大通店)","description":"Japanese-style bakery with savory breads and a café.","address":"札幌市中央区大通西1丁目13 ル・トロワ1F","day":4,"suggestion":"2 Nov: optional light meal around Odori after the kimono appointment.","alternative":"Café & Bar 日晴堂 · pudding and café break","source":"https://www.donguri-bake.co.jp/shop-list","note":"Inside Le Trois; follow the building’s opening notices."},
+  {"id":"sandria","name":"Sandria · main shop","description":"Takeaway sandwiches, including egg sandwiches.","address":"札幌市中央区南8条西9丁目758-14","day":2,"suggestion":"31 Oct: optional detour when visiting Gokoku Shrine / Nakajima Park. Leave enough time for the 16:00 concert arrival.","alternative":"Donguri Odori · bakery takeaway at Le Trois 1F","source":"https://www.s-sandwich.com/","note":"Main shop, not the more distant Tonden branch."},
+  {"id":"egg","name":"あべ養鶏場 えっぐぷりん","description":"Rich egg pudding made with Hokkaido eggs and milk.","address":"札幌市北区北6条西4丁目 札幌駅構内1F東コンコース北側","day":6,"suggestion":"4 Nov: optional pickup if your airport route passes through Sapporo Station and flight timing allows.","alternative":"Donguri Odori · bakery takeaway before leaving central Sapporo","source":"https://www.hkiosk.co.jp/shop/abe-youkei-eggpudding/","note":"Sapporo Station east concourse, north side; not an airport shop."},
+  {"id":"hokudai","name":"HOKUDAI MARCHE Café & Labo","description":"University dairy desserts, house-made gelato and café drinks.","address":"札幌市北区北9条西5丁目 北海道大学百年記念会館1階","day":1,"suggestion":"30 Oct: optional north-of-station detour with Suwa Shrine, only if time allows after the haircut and before the 16:00 concert arrival.","alternative":"Kitakaro Sapporo Honkan · cream puff closer to Odori","source":"https://marche-cafelabo.com/","note":"Current official listing: 10:00–16:00, last order 15:30; university events may affect opening."}
 ]
