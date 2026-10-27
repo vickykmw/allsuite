@@ -1,1 +1,30 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#650c22"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ALL SUITE"><link rel="apple-touch-icon" href="./icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><title>ALL SUITE · Sapporo 2026</title><style>:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#100c0e;color:#f4e8d5;font:16px system-ui,-apple-system,sans-serif}header{padding:18px;background:#651b2a;border-bottom:2px solid #c5a36a}.head{display:flex;align-items:center;gap:14px;max-width:850px;margin:auto}.logo{width:72px;height:72px;object-fit:cover;border-radius:8px}h1{font:30px Georgia;margin:0;letter-spacing:.08em}.sub{color:#e7c28c;font-size:13px;margin-top:5px}main{max-width:850px;margin:auto;padding:12px}nav{display:flex;gap:7px;overflow-x:auto;padding:5px 0 12px}button{background:#451421;color:#f7e4c6;border:1px solid #aa8854;border-radius:9px;padding:10px;cursor:pointer}button.active{background:#d3ac6c;color:#201016}.day{flex:0 0 auto;min-width:70px}section{background:#211719;border:1px solid #795b46;border-radius:15px;padding:15px;margin:10px 0}h2{font:23px Georgia;color:#e5c58c;margin:4px 0 10px}.item{padding:13px 0;border-top:1px solid #624749}.item:first-child{border-top:0}.when{color:#d6ad69;font-weight:700;margin-right:10px}.lock{color:#d9b47a;font-size:13px}.alt{background:#3b2725;border-radius:10px;padding:10px;margin-top:9px;color:#f0d9bc}.alt small{color:#dcb577;display:block;letter-spacing:.05em;margin-bottom:4px}.choices{margin-top:8px}.choices button{margin:0 5px 5px 0;padding:8px 12px}.muted{color:#c8b4aa;font-size:13px}a{color:#edc98c}.food{padding:12px 0;border-top:1px solid #5c4641}.food b{display:block}footer{color:#a9958b;text-align:center;padding:25px}</style></head><body><header><div class="head"><img class="logo" src="./all-suite-logo.jpg" alt="AS hotel logo"><div><h1>ALL SUITE</h1><div class="sub">SAPPORO · 29 OCT — 04 NOV 2026</div></div></div></header><main><nav id="days"></nav><section><h2 id="heading"></h2><div id="schedule"></div></section><section><h2>Places to eat · optional</h2><div id="foods"></div><p class="muted">Recommendations from your screenshots, not reservations. Opening hours and exact branches should be checked before visiting.</p></section><section><h2>Offline readiness</h2><p id="ready">Checking…</p><button onclick="checkOffline()">Check cache</button><p class="muted">Load once online in Safari, then Share → Add to Home Screen. Test in airplane mode. Choices are stored on this device only.</p></section></main><footer>ALL SUITE · SAPPORO 2026</footer><script src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#650c22">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="ALL SUITE">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <title>ALL SUITE · Sapporo 2026</title>
+</head>
+<body>
+  <header><div class="brand"><img src="./all-suite-logo.jpg" width="48" height="48" alt="AS hotel emblem"><div><h1>ALL SUITE</h1><p>SAPPORO · 29 OCT–4 NOV 2026</p></div></div></header>
+  <main>
+    <nav class="navigation" aria-label="Quick navigation"><a href="#trip">Days</a><a href="#bookings">Bookings</a><a href="#places">Places</a><a class="offline-link" href="#offline">Offline</a></nav>
+    <section id="trip" aria-label="Daily itinerary">
+      <div id="days" role="tablist" aria-label="Trip days"></div>
+      <div id="day-panel" role="tabpanel" tabindex="0"><h2 id="heading">29 October · Arrival</h2><p class="muted">All times Japan time (JST).</p><div id="schedule"><p>Loading itinerary…</p></div></div>
+    </section>
+    <p id="save-status" class="muted" role="status"></p>
+    <section id="bookings"><details><summary>Bookings <span class="muted">· locked arrangements</span></summary><div id="booking-list"></div></details></section>
+    <section id="places"><h2>Places <span class="muted">· optional food stops</span></h2><p class="muted">Suggestions only; allow travel time around bookings. Maps and source websites need a connection. Check opening hours and menus before visiting.</p><div id="foods"></div></section>
+    <section id="offline"><h2>Offline readiness</h2><p id="ready" role="status">Checking saved files…</p><button id="check-cache" type="button">Check offline readiness</button><p class="muted">iPhone: open in Safari → Share → Add to Home Screen. Open the installed app online once and check readiness there, then test in airplane mode. Choices stay on this device; clearing website data removes them.</p></section>
+    <noscript>Enable JavaScript to use the day tabs and saved choices. <a href="./itinerary.json">Read the itinerary data</a>.</noscript>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
