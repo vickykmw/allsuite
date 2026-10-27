@@ -1,0 +1,108 @@
+[
+  [
+    "29 Oct",
+    "Arrival · Sapporo",
+    [
+      [
+        "Flight HB880 · outbound",
+        "locked"
+      ],
+      [
+        "MKS hotel · check-in",
+        "locked"
+      ],
+      [
+        "Goods collection · 19:00–20:00",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "30 Oct",
+    "Haircut · shrine · concert",
+    [
+      [
+        "Amie Odori haircut · 10:00–12:30",
+        "locked"
+      ],
+      [
+        "札幌諏訪神社 · shrine visit",
+        "keep"
+      ],
+      [
+        "Concert · arrive 16:00, show 17:00 · busy until 21:00+",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "31 Oct",
+    "Goods · shrine · concert",
+    [
+      [
+        "Goods collection · 10:30–11:00",
+        "locked"
+      ],
+      [
+        "札幌護国神社 · shrine visit",
+        "keep"
+      ],
+      [
+        "Concert · arrive 16:00, show 17:00 · busy until 21:00+",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "1 Nov",
+    "Hotel change · concert",
+    [
+      [
+        "Check out MKS; check in APA Hotel & Resort Sapporo",
+        "locked"
+      ],
+      [
+        "Concert · arrive 14:00, show 15:00 · busy until 21:00+",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "2 Nov",
+    "Kimono day",
+    [
+      [
+        "美月櫻 · Tanukikoji · kimono 10:00–12:00",
+        "locked"
+      ],
+      [
+        "Wear kimono for the day",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "3 Nov",
+    "Kimono return",
+    [
+      [
+        "Return kimono to 美月櫻 · time not confirmed",
+        "locked"
+      ]
+    ]
+  ],
+  [
+    "4 Nov",
+    "Departure",
+    [
+      [
+        "Check out APA Hotel & Resort Sapporo",
+        "locked"
+      ],
+      [
+        "Flight HP881 · return",
+        "locked"
+      ]
+    ]
+  ]
+]

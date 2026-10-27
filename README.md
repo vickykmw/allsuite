@@ -1,8 +1,5 @@
-# AMENITY Sapporo 2026 — preview
-Initial offline-first PWA preview. Includes seven day tabs (30 Oct–5 Nov), known kimono arrangements, Keep/Swap/Skip choices saved in localStorage, service-worker offline caching, and readiness check. Other booking details and screenshot-derived places are **not yet restored**; do not treat placeholders as verified.
+# ALL SUITE Sapporo 2026
 
-## Publish with GitHub Pages
-Upload the **contents** of this folder (not the zip) into the root of `vickykmw/allsuite` on the `main` branch. In GitHub repository Settings → Pages, select Deploy from a branch → main → /(root) → Save. Visit https://vickykmw.github.io/allsuite/ after deployment. Load once online, then test airplane mode. On iPhone Safari, Share → Add to Home Screen.
+Upload all files in this folder to the root of `vickykmw/allsuite` on main, replacing existing files with matching names. Delete the old `icon.svg` if desired. GitHub Pages is configured to publish from main/root.
 
-## Notes
-Do not publish personal reservation codes or other sensitive booking data in a public repository. The app uses no external fonts, maps, analytics or images and should consume very little data. Selections are stored locally per device, not synced.
+Dates are **29 October–4 November**. Confirmed concerts, hotels, flights, haircut, goods, kimono and two shrines are included. Food screenshot entries are not recovered. Public repository: do not upload reservation numbers or personal information.
