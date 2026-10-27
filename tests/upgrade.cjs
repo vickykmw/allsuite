@@ -27,14 +27,14 @@ const assert = require('node:assert/strict');
     await page.evaluate(async()=>{localStorage.setItem('allsuite-v3-1-1','Skip');await caches.open('another-app');});
     legacy=false;
     await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();await r.update();});
-    await page.waitForFunction(async()=> (await navigator.serviceWorker.getRegistration()).active?.state === 'activated' && (await caches.keys()).includes('allsuite-v4') && !(await caches.keys()).includes('allsuite-v3'));
+    await page.waitForFunction(async()=> (await navigator.serviceWorker.getRegistration()).active?.state === 'activated' && (await caches.keys()).includes('allsuite-v5') && !(await caches.keys()).includes('allsuite-v3'));
     await page.reload();
     await page.waitForFunction(()=>document.querySelector('#ready').textContent.startsWith('Ready offline'));
     assert(await page.evaluate(async()=>(await caches.keys()).includes('another-app')));
     await page.locator('#day-1').click();
     assert.equal(await page.locator('[data-key="allsuite-v3-1-1"][data-choice=Skip]').getAttribute('aria-pressed'),'true');
     await page.context().setOffline(true);await page.reload();
-    await page.locator('#day-6').click();assert.match(await page.locator('#schedule').textContent(),/HP881/);
-    console.log('PASS: existing v3 installation upgrades to v4, retains choices and unrelated caches, and reloads offline under /allsuite/.');
+    await page.locator('#day-6').click();assert.match(await page.locator('#schedule').textContent(),/Scheduled departure · New Chitose Airport \(CTS\) · 16:00 JST/);
+    console.log('PASS: existing v3 installation upgrades to v5, retains choices and unrelated caches, and reloads offline under /allsuite/.');
   }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
